@@ -10,7 +10,9 @@
 }
   
 body {
-      background: var(--bg);
+    background: var(--bg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 ul {
@@ -40,15 +42,30 @@ li {
 .btn:focus { outline-style: none; }
 
 .light-theme {
-    --bg: var(--green);
+    --bg: linear-gradient(rgba(173, 216, 230, 0.438), rgba(0, 0, 255, 0.404),  rgba(0, 0, 139, 0.486));
     --fontColor: var(--black);
     --btnBg: var(--black);
     --btnFontColor: var(--white);
+
   }
   
-  .dark-theme {
+.dark-theme {
     --bg: var(--black);
     --fontColor: var(--green);
     --btnBg: var(--white);
     --btnFontColor: var(--black);
   }
+  
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 25%;
+    height: 25%;
+  }
+
+#msg{
+    text-align: left;
+    font-size: 18pt;
+}
