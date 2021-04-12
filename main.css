@@ -63,9 +63,25 @@ li {
     text-align: center;
     width: 25%;
     height: 25%;
+    padding: 1%
   }
 
 #msg{
     text-align: left;
     font-size: 18pt;
 }
+
+.flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    color: dodgerblue;
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    line-height: 75px;
+    font-size: 14px;
+  }
