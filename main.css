@@ -94,24 +94,29 @@ a {
     opacity: 0.8;
 }
 
-@media(max-width: 720px){
-    .card{
-        display:block;
-    }
-}
-
 .flex-container{
-    width: 1200px;
     margin: 0px;
     padding: 0px;
     display: flex;
-    flex-direction: row;
+    width: 100%;
 }
 
 .flex-container > ul {
     list-style: none;
-    flex: 1;
+    flex: 100;
+    display: inline-block;
+    width: auto;
   }
+
+@media(max-width: 720px){
+    .card{
+        display:block;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+      }
+}
 
 /* :root {
     --green: #00FF00;
