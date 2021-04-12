@@ -6,22 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jonnie Bahr</title>
     <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body class="light-theme"></body>
-    <h1 style="text-align: center">Jonnie Bahr</h1>
-    <div class="flex-container">
-        <div><a href="index.html">About Me</a></div>
-        <div><a href="workexperience.html">Work Experience</a></div>
-        <div><a href="coursework.html">Course Work</a></div>
-        <div><a href="hobbies.html">Hobbies</a></div>
-        <div><a href="contactme.html">Contact Me</a></div>
+   <header class="main-header">
+   <h1><a href="index.html"><span>Jonnie Bahr</span></a></h1>
+   <div class="flex-container">
+        <ul><a href="aboutme.html">About Me</a></ul>
+        <ul><a href="coursework.html">Education</a></ul>
+        <ul><a href="workexperience.html">Work Experience</a></ul>
+        <ul><a href="hobbies.html">Hobbies</a></ul>
+        <ul><a href="burgers.html">Burgers</a></ul>
+        <ul><a href="contactme.html">Contact Me</a></ul>
     </div>
-
-    <p id='msg'>Gaming</p>
-        <p>
-                &emsp; I don't know, some bullshit about me.
-        </p>
-    <script src="app.js"></script>
-    <noscript>You need to enable JavaScript to view the full site.</noscript>
-</body>
-</html>
+    </header>
+    <main class="container">
+            <section class="card">
+                    <img src="jonnie.jpeg" alt="" class="img">
+                    <div>
+                        <h3>Hobbies</h3>
+                        <p>I have always been interested in many technologies including computers and videogames. Due to this I decided to pursue a career
+                                in software development. In high school my career interests began in engineering. I was accepted into the University of Wisconsin-Madison's College of engineering
+                                with a focus in Biomedical Engineering. During this program I took a Java programming class and after that I was hooked. I switched to a major in Computer Sciences
+                                and graduated in May of 2020 with a B.S. Degree. </p>
+                         <a href="#" class="btn">Read more</a>      
+                    </div>
+                </section>
+    </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 400,
+          duration: 1000
+      });
+    </script>
